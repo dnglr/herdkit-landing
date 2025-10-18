@@ -105,7 +105,11 @@
   <script>
     function parallax(event) {
       let backgroundSpeed = 0.5;
-      document.querySelectorAll('.parallax').forEach(el => el.style.transform = `translateY(${window.scrollY * backgroundSpeed}px)`);
+      document.querySelectorAll('.parallax').forEach(el => {
+        requestAnimationFrame(() => {
+          el.style.transform = `translateY(${window.scrollY * backgroundSpeed}px)`;
+        });
+      });
     }
     window.addEventListener('scroll', parallax);
   </script>
