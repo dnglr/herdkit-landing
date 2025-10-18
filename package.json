@@ -1,0 +1,15 @@
+{
+  "name": "herdkit-landing",
+  "version": "1.0.0",
+  "description": "Landing site for HerdKit",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx @tailwindcss/cli -i ./src/main.css -o ./build/main.css --watch",
+    "build": "npx @tailwindcss/cli -i ./src/main.css -o ./build/main.css"
+  },
+  "author": "Garrett Dengler",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.13",
+    "tailwindcss": "^4.1.13"
+  }
+}
